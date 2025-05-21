@@ -126,11 +126,11 @@ def format_kpi_dict(kpi_dict):
     )
 
 # Checking the KPI dictionary
-st.write(extract_kpi_financial_position(sheet_name="Statement of Financial Position"))
+# st.write(extract_kpi_financial_position(sheet_name="Statement of Financial Position"))
 
-st.write(extract_kpi_com_income(sheet_name="Statement of Com. Income"))
+# st.write(extract_kpi_com_income(sheet_name="Statement of Com. Income"))
 
-st.write(extract_kpi_cashflow(sheet_name="Statement of Cash Flows"))
+# st.write(extract_kpi_cashflow(sheet_name="Statement of Cash Flows"))
 # --- Streamlit UI ---
 st.title("💬 Ask Me About KPIs")
 
