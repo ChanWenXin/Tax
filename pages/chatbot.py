@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-import openai
+from openai import OpenAI
 # import os
 
 
@@ -135,7 +135,9 @@ def format_kpi_dict(kpi_dict):
 st.title("💬 Ask Me About KPIs")
 
 # OpenAPI Key
-openai.api_key = st.secrets["openai_api_key"]
+# ✅ Load secret key properly
+openai_api_key = st.secrets["openai_api_key"]
+
 
 # Select report
 report_options = [
@@ -167,7 +169,7 @@ KPI Summary:
 
 # Call OpenAI
 if question:
-    client = openai.OpenAI()
+    client = OpenAI(api_key=openai_api_key)
     response = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
