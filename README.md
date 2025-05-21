@@ -26,3 +26,11 @@ An interactive Streamlit dashboard built to visualize and analyze the Inland Rev
    ```bash
    git clone https://github.com/ChanWenXin/Tax.git
    cd Tax
+2. (Optional) Create a virtual environment:
+  python -m venv venv
+  venv\Scripts\activate    # Windows
+  source venv/bin/activate # macOS/Linux
+3. Install dependencies:
+  pip install -r requirements.txt
+4. Run the app:
+  streamlit run Home.py
