@@ -123,14 +123,14 @@ col1, col2, col3 = st.columns(3)
 with col1:
      st.markdown(f"""
 <div style="padding-bottom:1rem">
-    <div style="font-size:1.5rem;color:white;font-weight:800">Free Cash Flow</div>
+    <div style="font-size:1.5rem;color:black;font-weight:800">Free Cash Flow</div>
     <div style="font-size:1.5rem;font-weight:bold;color:deepskyblue">S${free_cash_flow:,.0f}</div>
 </div>
 """, unsafe_allow_html=True)
 
      st.markdown(f"""
 <div style="padding-bottom:1rem">
-    <div style="font-size:1.5rem;color:white;font-weight:800">Cash Flow Coverage Ratio</div>
+    <div style="font-size:1.5rem;color:black;font-weight:800">Cash Flow Coverage Ratio</div>
     <div style="font-size:1.5rem;font-weight:bold;color:deepskyblue">{cash_flow_coverage:,.2f}</div>
 </div>
 """, unsafe_allow_html=True)
@@ -138,7 +138,7 @@ with col1:
 with col2:
     st.markdown(f"""
 <div style="padding-bottom:1rem">
-    <div style="font-size:1.5rem;color:white;font-weight:800">Net Cash Margin</div>
+    <div style="font-size:1.5rem;color:black;font-weight:800">Net Cash Margin</div>
     <div style="font-size:1.5rem;font-weight:bold;color:deepskyblue">{net_cash_margin:,.2%}</div>
 </div>
 """, unsafe_allow_html=True)
@@ -150,7 +150,7 @@ else:
 
 st.markdown(f"""
 <div style="padding-bottom:1rem">
-    <div style="font-size:1.5rem;color:white;font-weight:800">Cash Burn Rate</div>
+    <div style="font-size:1.5rem;color:black;font-weight:800">Cash Burn Rate</div>
     <div style="font-size:1.5rem;font-weight:bold;color:deepskyblue">{burn_rate_display}</div>
 </div>
 """, unsafe_allow_html=True)
@@ -159,7 +159,7 @@ st.markdown(f"""
 with col3:
     st.markdown(f"""
 <div style="padding-bottom:1rem">
-    <div style="font-size:1.5rem;color:white;font-weight:800">Cash Runway</div>
+    <div style="font-size:1.5rem;color:black;font-weight:800">Cash Runway</div>
     <div style="font-size:1.5rem;font-weight:bold;color:deepskyblue">{runway_months:,.1f} months</div>
 </div>
 """, unsafe_allow_html=True)

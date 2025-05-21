@@ -109,14 +109,14 @@ col1, col2, col3 = st.columns(3)
 with col1:
      st.markdown(f"""
 <div style="padding-bottom:1rem">
-    <div style="font-size:1.5rem;color:white;font-weight:800">Operating Surplus Margin</div>
+    <div style="font-size:1.5rem;color:black;font-weight:800">Operating Surplus Margin</div>
     <div style="font-size:1.5rem;font-weight:bold;color:deepskyblue">{operating_surplus_margin:,.2%}</div>
 </div>
 """, unsafe_allow_html=True)
 
      st.markdown(f"""
 <div style="padding-bottom:1rem">
-    <div style="font-size:1.5rem;color:white;font-weight:800">Investment Return Contribution</div>
+    <div style="font-size:1.5rem;color:black;font-weight:800">Investment Return Contribution</div>
     <div style="font-size:1.5rem;font-weight:bold;color:deepskyblue">{investment_contribution_ratio:,.2f}</div>
 </div>
 """, unsafe_allow_html=True)
@@ -124,14 +124,14 @@ with col1:
 with col2:
     st.markdown(f"""
 <div style="padding-bottom:1rem">
-    <div style="font-size:1.5rem;color:white;font-weight:800">Gov Fund Contribution Ratio</div>
+    <div style="font-size:1.5rem;color:black;font-weight:800">Gov Fund Contribution Ratio</div>
     <div style="font-size:1.5rem;font-weight:bold;color:deepskyblue">{gov_contribution_ratio:,.2f}</div>
 </div>
 """, unsafe_allow_html=True)
     
     st.markdown(f"""
 <div style="padding-bottom:1rem">
-    <div style="font-size:1.5rem;color:white;font-weight:800">Net Surplus Margin</div>
+    <div style="font-size:1.5rem;color:black;font-weight:800">Net Surplus Margin</div>
     <div style="font-size:1.5rem;font-weight:bold;color:deepskyblue">{net_surplus_margin:,.2f}</div>
 </div>
 """, unsafe_allow_html=True)
@@ -139,7 +139,7 @@ with col2:
 with col3:
     st.markdown(f"""
 <div style="padding-bottom:1rem">
-    <div style="font-size:1.5rem;color:white;font-weight:800">YoY Income Growth</div>
+    <div style="font-size:1.5rem;color:black;font-weight:800">YoY Income Growth</div>
     <div style="font-size:1.5rem;font-weight:bold;color:{'green' if income_growth_pct > 0 else 'red'}">{income_growth_pct:+.2f}%</div>
 </div>
 """, unsafe_allow_html=True)

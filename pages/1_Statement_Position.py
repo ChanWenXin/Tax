@@ -126,14 +126,14 @@ col1, col2, col3 = st.columns(3)
 with col1:
      st.markdown(f"""
 <div style="padding-bottom:1rem">
-    <div style="font-size:1.5rem;color:white;font-weight:800">Equity/Assets Ratio</div>
+    <div style="font-size:1.5rem;color:black;font-weight:800">Equity/Assets Ratio</div>
     <div style="font-size:1.5rem;font-weight:bold;color:deepskyblue">{equity_ratio:,.2%}</div>
 </div>
 """, unsafe_allow_html=True)
 
      st.markdown(f"""
 <div style="padding-bottom:1rem">
-    <div style="font-size:1.5rem;color:white;font-weight:800">Current Ratio</div>
+    <div style="font-size:1.5rem;color:black;font-weight:800">Current Ratio</div>
     <div style="font-size:1.5rem;font-weight:bold;color:deepskyblue">{current_ratio:,.2f}</div>
 </div>
 """, unsafe_allow_html=True)
@@ -141,14 +141,14 @@ with col1:
 with col2:
     st.markdown(f"""
 <div style="padding-bottom:1rem">
-    <div style="font-size:1.5rem;color:white;font-weight:800">Working Capital</div>
+    <div style="font-size:1.5rem;color:black;font-weight:800">Working Capital</div>
     <div style="font-size:1.5rem;font-weight:bold;color:deepskyblue">S${working_capital:,.0f}</div>
 </div>
 """, unsafe_allow_html=True)
     
     st.markdown(f"""
 <div style="padding-bottom:1rem">
-    <div style="font-size:1.5rem;color:white;font-weight:800">Debt-to-Equity Ratio</div>
+    <div style="font-size:1.5rem;color:black;font-weight:800">Debt-to-Equity Ratio</div>
     <div style="font-size:1.5rem;font-weight:bold;color:deepskyblue">{de_ratio:,.2f}</div>
 </div>
 """, unsafe_allow_html=True)
@@ -156,7 +156,7 @@ with col2:
 with col3:
     st.markdown(f"""
 <div style="padding-bottom:1rem">
-    <div style="font-size:1.5rem;color:white;font-weight:800">YoY Asset Growth</div>
+    <div style="font-size:1.5rem;color:black;font-weight:800">YoY Asset Growth</div>
     <div style="font-size:1.5rem;font-weight:bold;color:{'green' if asset_growth > 0 else 'red'}">{asset_growth:+.2f}%</div>
 </div>
 """, unsafe_allow_html=True)
