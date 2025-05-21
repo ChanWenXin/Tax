@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-from openai import OpenAI
+import openai
 # import os
 
 
@@ -134,9 +134,6 @@ def format_kpi_dict(kpi_dict):
 # --- Streamlit UI ---
 st.title("💬 Ask Me About KPIs")
 
-# OpenAPI Key
-# ✅ Load secret key properly
-openai_api_key = st.secrets["openai_api_key"]
 
 
 # Select report
@@ -166,15 +163,18 @@ Use this data to explain the user's questions correctly and clearly.
 KPI Summary:
 {report_kpi}
 """
+# OpenAPI Key
+# ✅ Load secret key properly
+openai_api_key = st.secrets["openai_api_key"]
+openai.api_key = openai_api_key
 
 # Call OpenAI
 if question:
-    client = OpenAI(api_key=openai_api_key)
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
+    response = openai.ChatCompletion.create(
+        model="gpt-4",
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": question}
         ]
     )
-    st.markdown(f"**Answer:** {response.choices[0].message.content}")
+    st.markdown(f"**Answer:** {response['choices'][0]['message']['content']}")
